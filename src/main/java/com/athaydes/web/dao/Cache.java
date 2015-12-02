@@ -1,38 +1,92 @@
 package com.athaydes.web.dao;
 
 public class Cache {
-	private String ts;
+    private String id;
 
-	private String value;
+    private String ts;
 
-	private String uuid;
+    private String cache;
 
-	public String getTs() {
-		return ts;
+    private String opStatus;
+
+    private String cluster;
+
+    private String uuid;
+
+    private String hwRevision;
+
+    public String getId ()
+    {
+        return id;
+    }
+
+    public void setId (String id)
+    {
+        this.id = id;
+    }
+
+    public String getTs ()
+    {
+        return ts;
+    }
+
+    public void setTs (String ts)
+    {
+        this.ts = ts;
+    }
+
+
+    public String getOpStatus ()
+    {
+        return opStatus;
+    }
+
+    public void setOpStatus (String opStatus)
+    {
+        this.opStatus = opStatus;
+    }
+
+	public String getCache() {
+		return cache;
 	}
 
-	public void setTs(String ts) {
-		this.ts = ts;
+	public void setCache(String cache) {
+		this.cache = cache;
 	}
 
-	public String getValue() {
-		return value;
-	}
+    public String getCluster ()
+    {
+        return cluster;
+    }
 
-	public void setValue(String value) {
-		this.value = value;
-	}
+    public void setCluster (String cluster)
+    {
+        this.cluster = cluster;
+    }
 
-	public String getUuid() {
-		return uuid;
-	}
+    public String getUuid ()
+    {
+        return uuid;
+    }
 
-	public void setUuid(String uuid) {
-		this.uuid = uuid;
-	}
+    public void setUuid (String uuid)
+    {
+        this.uuid = uuid;
+    }
 
-	@Override
-	public String toString() {
-		return "Cache [ts = " + ts + ", value = " + value + ", uuid = " + uuid + "]";
-	}
+    public String getHwRevision ()
+    {
+        return hwRevision;
+    }
+
+    public void setHwRevision (String hwRevision)
+    {
+        this.hwRevision = hwRevision;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Cache [id = "+id+", ts = "+ts+", name = "+cache+", opStatus = "+opStatus+", cluster = "+cluster+", uuid = "+uuid+", hwRevision = "+hwRevision+"]";
+    }
 }
