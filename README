@@ -1,0 +1,6 @@
+Application demonstrating a web app which provides a RESTful API through Jersey.
+It uses Guice as its Dependency Injection framework.
+
+See my blog post for details:
+
+http://software.athaydes.com/posts/jersey_guice_rest_api
